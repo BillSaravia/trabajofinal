@@ -1,0 +1,16 @@
+.text-editor{
+    font-family: 'Montserrat',"Lato","Arial";
+    font-size: 20px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex: 0 0 auto;
+    width: "auto";
+    max-width: none;
+    line-height: 1.5;
+
+}
+

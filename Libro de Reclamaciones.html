@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<ht<!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        
+        
+        <link rel="stylesheet" href="estilos.css">
+    
+
+
+
+
+        <title>Empresa de diseño y desarrollo "ELITE"</title>
+      </head>
+      <body>
+        
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img class="Logotipos" src="images/home/Logotipos.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Como_funciona.html">Como funciona</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Por_qué_elegirnos.html">Por qué elegirnos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                  </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="Quienes somos.html">Quienes somos</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="inicio_sesion.html">Inicio sesion</a>
+                  </li>
+                    <li>
+                        <a href="https://www.facebook.com/chupetintrujillooficial"><img class="iconos-redes-header" src="images/svg/facebook-logo-button.svg" alt="Facebook"></a>
+                        <a href="https://twitter.com/YourAnonNews?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="iconos-redes-header" src="images/svg/instagram-logo.svg" alt="Instragram"></a>
+                        <a href="https://www.instagram.com/zuck/?hl=es-la"><img class="iconos-redes-header" src="images/svg/twitter-logo-button.svg" alt="Twitter"></a>
+
+
+                   </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div id="libroReclamaciones" class="row">
+			<div class="col col-md-8 col-md-offset-2 offset-md-2 pb-3">
+
+				<h2 class="text-center">Libro de reclamaciones</h2>
+
+				<p class="lead">Conforme a lo establecido en el Código de Protección y Defensa del Consumidor contamos con un Libro de Reclamaciones a tu disposición. Ingresa una queja o reclamo aquí.</p>
+
+
+
+				<form name="frm_libroReclamaciones" id="frm_libroReclamaciones" method="post" action="#" data-parsley-validate="" novalidate="">
+					<div class="row">
+
+						<div class="col">
+							<label for="libroreclamacion_fecha">Fecha de reclamo o queja:</label>
+							<input type="text" name="libroreclamacion_fecha" id="libroreclamacion_fecha" class="form-control" value="05/07/2021" readonly="">
+
+
+							<hr class="mt-3 mb-3">
+
+
+
+							<h5>1. IDENTIFICACIÓN DEL CONSUMIDOR RECLAMANTE</h5>
+
+							<div class="form-group">
+								<label for="libroreclamacion_nombre">Nombres y Apellidos:</label>
+								<input type="text" name="libroreclamacion_nombre" id="libroreclamacion_nombre" class="form-control" maxlength="250" required="">
+							</div>
+
+							<div class="form-group" id="divApellidos">
+								<label for="libroreclamacion_domicilio">Domicilio:</label><br>
+								<input type="text" name="libroreclamacion_domicilio" id="libroreclamacion_domicilio" class="form-control" maxlength="250" required="">
+							</div>
+
+							<div class="row">
+								<div class="col col-md-5">
+									<div class="form-group">
+										<label for="libroreclamacion_tipodocumento">Doc. de Identidad:</label><br>
+										<select name="libroreclamacion_tipodocumento" id="libroreclamacion_tipodocumento" class="form-control">																									<option data-digitmax="8" value="1">DNI</option>
+																																																	<option data-digitmax="12" value="5">Carnet de extranjería</option>
+																																		</select>
+									</div>
+								</div>
+								<div class="col col-md-7">
+									<div class="form-group">
+										<label for="libroreclamacion_numero">N° doc. Identidad:</label><br>
+										<input type="text" name="libroreclamacion_numero" data-parsley-minlength="8" maxlength="8" id="libroreclamacion_numero" class="form-control positive-integer" required="" data-parsley-trigger="change">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="libroreclamacion_email">Correo Electrónico:</label><br>
+								<input type="email" name="libroreclamacion_email" id="libroreclamacion_email" class="form-control" maxlength="150" required="" data-parsley-trigger="change">
+							</div>
+
+							<div class="form-group">
+								<label for="libroreclamacion_telefono">Teléfono:</label><br>
+								<input type="text" name="libroreclamacion_telefono" id="libroreclamacion_telefono" class="form-control" maxlength="100" required="">
+							</div>
+
+							<hr class="mt-3 mb-3">
+
+							<div class="form-group">
+								<h5>2. IDENTIFICACIÓN DEL BIEN CONTRATADO</h5>
+								<label for="libroreclamacion_tipobien_producto">
+									<input type="radio" id="libroreclamacion_tipobien_producto" name="libroreclamacion_tipobien" value="1" checked="" data-parsley-multiple="libroreclamacion_tipobien"> Producto</label>  &nbsp;&nbsp;&nbsp;&nbsp;
+								<label for="libroreclamacion_tipobien_servicio">
+									<input type="radio" id="libroreclamacion_tipobien_servicio" name="libroreclamacion_tipobien" value="2" data-parsley-multiple="libroreclamacion_tipobien"> Servicio</label>
+							</div>
+
+							<div class="form-group">
+								<label for="libroreclamacion_descripcionbien">Descripción:</label><br>
+								<textarea id="libroreclamacion_descripcionbien" name="libroreclamacion_descripcionbien" class="form-control" rows="5" required=""></textarea>
+							</div>
+
+							<hr class="mt-3 mb-3">
+
+							<div class="form-group">
+								<h5>3. DETALLE DE LA RECLAMACIÓN</h5>
+								<label for="libroreclamacion_tiporeclamacion_reclamo">
+									<input type="radio" id="libroreclamacion_tiporeclamacion_reclamo" name="libroreclamacion_tiporeclamacion" value="1" checked="" data-parsley-multiple="libroreclamacion_tiporeclamacion"> Reclamo (*)</label> &nbsp;&nbsp;&nbsp;&nbsp;
+								<label for="libroreclamacion_tiporeclamacion_queja">
+									<input type="radio" id="libroreclamacion_tiporeclamacion_queja" name="libroreclamacion_tiporeclamacion" value="2" data-parsley-multiple="libroreclamacion_tiporeclamacion"> Queja (**)</label>
+							</div>
+
+							<div class="form-group">
+								<label for="libroreclamacion_detallereclamacion">Detalle:</label><br>
+								<textarea id="libroreclamacion_detallereclamacion" name="libroreclamacion_detallereclamacion" class="form-control" rows="5" required=""></textarea>
+								<small>(*) <strong>RECLAMO:</strong> Disconformidad relacionada a los productos expendidos o servicios brindados.<br>
+									(**) <strong>QUEJA:</strong> Disconformidad NO RELACIONADA a los productos o servicios. Malestar o descontento respecto con la atención al público.</small>
+							</div>
+
+
+							<hr class="mt-3 mb-3">
+
+
+							<div class="form-group">
+								<h5>4. ACCIONES ADOPTADAS POR EL VENDEDOR</h5>
+								<label for="libroreclamacion_accionadoptada">Detalle:</label><br>
+								<textarea id="libroreclamacion_accionadoptada" name="libroreclamacion_accionadoptada" class="form-control" rows="5" readonly="">Este campo será llenado por el proveedor al momento de atender su queja o reclamo.</textarea>
+							</div>
+							
+
+							<hr class="mt-3 mb-3">
+
+													<div class="form-group">
+							<label for="captchaLibroReclamacion">
+								<strong>Ingrese el texto</strong>
+							</label>
+							<div class="form-inline">
+								<div class="mb-2">
+									<img src="https://mitienda.pe/uploads/captcha/1625468103.1676.jpg" style="width: 150; height: 35; border: 0;" alt=" " class="captcha">									<i id="reloadCaptchaLibro" class="fa fa-refresh"></i>
+								</div>
+								<input id="captchaLibro" name="captchaLibro" type="text" class="form-control mb-2" required="" maxlength="5">
+							</div>
+						</div>
+					
+							<div class="form-group">
+								<label for="terminosLibroReclamaciones"><input type="checkbox" id="terminosLibroReclamaciones" name="terminosLibroReclamaciones[]" required="" data-parsley-multiple="terminosLibroReclamaciones"> &nbsp;
+									Acepto los Términos del <a href="https://www.indecopi.gob.pe/documents/20195/177451/CodigoDProteccionyDefensaDelConsumidor%5B1%5D.pdf/934ea9ef-fcc9-48b8-9679-3e8e2493354e" target="_BLANK">artículo 150º de la Ley Nº 29571</a> del Código de Protección y Defensa del Consumidor</label>
+							</div>
+
+
+							<div class="row">
+                                <div class="col">
+                                    <span id="loaderProcesarPago"></span>
+                                    <button style="background-color:rgb(0, 0, 0); border-color:rgb(255, 0, 0); color:rgb(255, 0, 0)"  id="btnRegistroGratis" type="submit" class="btn btn-lg btn-block btn-dashboard" aria-label="Left Align">
+                                        Continuar
+                                    </button>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+<section id="mayor-informacion" class="container-fluid pt-5 pb-5 fondo-azul">
+    <div class="container">
+      <div class="row">
+        <div class="col mx-auto text-center">
+          <p class="lead">Para mayor información,
+            <br> escribe a <a href="mailto:bill.saravia@tecsup.edu.pe" class="">bill.saravia@tecsup.edu.pe</a>
+            <br> llama al teléfono
+            <br><a href="https://api.whatsapp.com/send?phone=51937079890" aria-hidden="true"><i class="fa fa-whatsapp"></i>937-079-890</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer" class="">
+    <div class="container-fluid">
+      <nav class="row">
+        <ul class="col">
+          <li><a href="Quienes somos.html" hreflang="es">Quienes somos</a></li>
+    <li><a href="Teminos_y_condiciones.html" hreflang="es">Términos y Condiciones</a></li>
+    <li><a href="Políticas de Privacidad.html" hreflang="es">Políticas de Privacidad</a></li>
+    <li><a href="Libro de Reclamaciones.html" hreflang="es">Libro de Reclamaciones</a></li>
+    <li><a href="https://twitter.com/YourAnonNews?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="Twitter"><i class="fa fa-twitter"></i>Twitter</a></li>
+    <li><a href="https://www.facebook.com/chupetintrujillooficial" title="Facebook"><i class="fa fa-facebook" ></i>Facebook</a></li>
+    <li><a href="https://www.instagram.com/zuck/?hl=es-la" title="Instagram"><i class="fa fa-instagram"></i>Instragram</a></li>
+  </ul>
+</nav>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

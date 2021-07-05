@@ -1,0 +1,43 @@
+.button-login-facebook {
+    background-color: #1877f2;
+    height: 25px;
+    width:  25px;
+}
+.button-login-google{
+    background-color: #1877f2;
+    height: 25px;
+    width:  25px;
+}
+
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto webkit, focus, rin,color;
+  }
+  
+.button-login {
+    align-items: center;
+    border: none;
+    box-shadow: 0 2px 1px rgb(0 0 0 / 25%);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: table;
+    font: 100 13px/19px Roboto,sans-serif;
+    height: 12px;
+    line-height: 38px;
+    margin: 0 auto;
+    min-height: 35px;
+    min-width: 75px;
+    padding: 1px 11px 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    vertical-align: middle;
+    width: fit-content;
+    -webkit-appearance: none;
+    border-radius: .25rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
